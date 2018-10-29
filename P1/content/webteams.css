@@ -1,0 +1,16 @@
+table{
+	border-style: solid;
+	border-radius: 15 px;
+	padding: 20 px;
+	width: 1200px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+table tr td {
+	border: 1px solid;
+}
+
+table th {
+	border: 1px solid;
+}
