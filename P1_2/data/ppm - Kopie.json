@@ -1,0 +1,29 @@
+{
+  
+  "ppaktuell": {
+    "count": 4,
+    "list": { }
+  },
+  "lehrer": {
+    "count": 1,
+    "list": {}
+  },
+  "ppangebot": {
+    "count": "1",
+    "list": { }
+  },
+  "ppabgeschlossen": {
+    "count": 0,
+    "list": { }
+  },
+  "student": {
+    "count": 1,
+    "list": {
+      
+    }
+  },
+  "firma": {
+    "count": 0,
+    "list": { }
+  }
+}

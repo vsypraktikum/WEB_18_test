@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="dokumentation-für-den-zweiten-praktikumstermin">Dokumentation für den zweiten Praktikumstermin</h1>
+<p>von Mathis Rudolf und David Krus aus Gruppe D. Krefeld, den 16.11.2016.</p>
+<p>Ein Praxisphasenmanager der nach den Vogegebenen Kriterien erstellt wurde und die gewünschten Funktionen aufweist. Dieser wurde mit Python, Mako und Javascript realisiert. Als Datenbank dient eine JSONdatei.</p>
+<p>Diese Anwendung dient dazu die Auswahl von Praxisphasen für Studenten zu erleichern und sie einer gewünschten Praxisphase in einem gewünschten Betrieb zuzuweisen.</p>
+<ul>
+<li><h2 id="funktionsübersicht">Funktionsübersicht:</h2>
+<ul>
+<li>Erstellung von Studenten, Firmen, Lehrern und Praxisphasenangeboten.</li>
+<li>Bearbeitung von Studenten, Firmen, Lehrern und Praxisphasenangeboten.</li>
+<li>Löschen von Studenten, Firmen und Lehrern.</li>
+<li>Sortierte Ausgabe der Praxisphasenangebote.</li>
+</ul></li>
+<li><h2 id="application.py">application.py :</h2>
+<p>Funktionen dieser Datei dienen zu Erstellung, Editierung und zum löschen der verschiedenen Komponenten, dies wird durch Verweise aud die database.py erreicht, wo die dortigen Funktionen dann die gewünschten Änderungen in der Datenbank vornehmen.</p>
+<ul>
+<li>Beispielfunktionen:
+<ul>
+<li>Bsp. create Funktion : create...()</li>
+<li>Bsp. Editierfunktion : edit...()</li>
+<li>Bsp. Löschfunktion : delete...()</li>
+</ul></li>
+</ul></li>
+<li><h2 id="database.py">database.py:</h2>
+<p>Die Funktionen in database.py sind dafür zustäig Werte in die Jason Datei zu schreiben und zu löschen. Außerdem werden durch die dortigen Funktionen Werte aus der Tabelle gelesen.</p>
+<ul>
+<li>Beispielfunktionen
+<ul>
+<li>Bsp. Lesen : def readStudent_px(self, id_spl):.</li>
+<li>Bsp. Schreiben: def saveData_p(self):.</li>
+<li>Bsp. Löschen : def deleteStudent_px(self, id_spl):.</li>
+</ul></li>
+</ul></li>
+<li><h2 id="view.py">view.py:</h2>
+<p>Dient zur Implementierung von Templates und als Markupgenerator.</p>
+<p>Bsp. Funktion Templateimplementierung : def createStudentForm_px(self, id_spl, data_opl):.</p>
+<p>Hierbei wird das studentform0.tpl Template eingebunden und für das markup der Seite genutzt.</p></li>
+<li><h2 id="datenablage">Datenablage :</h2></li>
+</ul>
+<p>Als Datenablage nutzen wir eine JSONdatei, welche wir in Dictionaries und Listen unterteilt haben.</p>
+<figure>
+<img src="jsondatei.png" alt="json" /><figcaption>json</figcaption>
+</figure>
+<h2 id="validierte-seiten">Validierte Seiten:</h2>
+<ul>
+<li>Validierte Studentenseite:</li>
+</ul>
+<figure>
+<img src="student.png" alt="student" /><figcaption>student</figcaption>
+</figure>
+<p>Validierter CSScode:</p>
+<figure>
+<img src="css.png" alt="css" /><figcaption>css</figcaption>
+</figure>
+<ul>
+<li>Validierte Indexseite:</li>
+</ul>
+<figure>
+<img src="index.png" alt="index" /><figcaption>index</figcaption>
+</figure>
+<ul>
+<li>Validierte Lehrerseite:</li>
+</ul>
+<figure>
+<img src="lehrer.png" alt="lehrer" /><figcaption>lehrer</figcaption>
+</figure>
+</body>
+</html>
